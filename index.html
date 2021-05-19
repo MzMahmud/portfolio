@@ -1,190 +1,408 @@
-<!DOCTYPE HTML>
-<!--
-	Full Motion by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
 <head>
-	<title>Learn with Moaz</title>
-	<meta charset="utf-8" />
-	<link rel="icon" href="images/icon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <style>
+        .get-in-touch ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        .get-in-touch i {
+            transition: .2s;
+            color: white;
+        }
+
+        .get-in-touch i:hover {
+            transition: .2s;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(87, 78, 78, 0.267);
+        }
+
+        #lead-content a:focus {
+            color: white;
+        }
+    </style>
 </head>
 
-<body id="top">
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-	<!-- Banner -->
-	<!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
-	<section id="banner">
-		<div class="inner">
-			<header>
-				<h1>Learn with Moaz!</h1>
-				<p>I am Moaz Mahmud.
-					Currently studying Computer Science and Engineering in Bangladesh University of Engineering and
-					Technology (BUET).
-					I have a great passion for learning and teaching.
-					As a native Bangla speaker I have a great passion of providing a deep dive into the ideas and
-					concepts of every subject in my native language.
-					This site showcases my teaching on Math and Physics.</p>
-			</header>
-			<a href="#footer" class="more">Learn More</a>
-		</div>
-	</section>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Moaz Mahmud</h1>
+            <h2>Software Engineer</h2>
+            <div class="container">
+                <a class="btn-rounded-white" href="/files/Moaz_Mahmud_Resume.pdf" download
+                    style="text-decoration: none; cursor: pointer;">
+                    Download Resume
+                </a>
+            </div>
 
-	<!-- Main -->
-	<div id="main">
-		<div class="inner">
+            <div class="container" style="margin-top: 10px;">
+                <a class="btn-rounded-white" href="/youtube.html" style="text-decoration: none; cursor: pointer;">
+                    Youtube Lectures
+                </a>
+            </div>
+        </div>
+        <!-- End #lead-content -->
 
-			<!-- Boxes -->
-			<div class="thumbnails">
+        <div id="lead-overlay"></div>
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK27hJaapydTWrXIYpLWdePv"
-						class="image fit"><img src="images/m3-1.png" alt="" /></a>
-					<div class="inner">
-						<h3>সরলরেখা (Batch 1)</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK27hJaapydTWrXIYpLWdePv"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/13ngfTnhBBQ6mDKd9HhDEYi8RuA1GJTbk?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK3KxUL0cyIa0cK1QSDrlOf1"
-						class="image fit"><img src="images/m3-2.png" alt="" /></a>
-					<div class="inner">
-						<h3>সরলরেখা (Batch 2)</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK3KxUL0cyIa0cK1QSDrlOf1"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/11Z7TUN7HJ9jjt49_IxBn-OPBmKn93C7q?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I am a Software Engineer by profession and a teacher, photographer, traveller by passion. I was
+                        born in Chittagong, my primary school life was in Dhaka, my highschool life was in Jashore, and
+                        finally my I spent my university life in Dhaka. This constant shifting was due to my father
+                        being a military person. The environment of the cantonment tought me to mix with different types
+                        of people.
+                    </p>
+                    <p>
+                        I am lucky in a sence that my passion and profession mingles with each other. I am passionate to
+                        solve variours real world problem and interesting theoretical problems by using my knowledge and
+                        experience in software. Yes, to be completely honest, I am a software guy, don't like to work
+                        with hardware much.
+                    </p>
+                    <p>
+                        I am passionate about learning and teaching math, science, and computer science. I am the
+                        Funding Member and Academic Co-ordinator of Trivuj Math Club and Academic member of Bangladesh
+                        Mathematical Olympiad. This passion leads me to roam around the country to give lectures to
+                        inspire and prepare young minds on math, computer science.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK2LcS7Bf3DoJX-UsAVoq1wY"
-						class="image fit"><img src="images/m6.png" alt="" /></a>
-					<div class="inner">
-						<h3>ত্রিকোণমিতি</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK2LcS7Bf3DoJX-UsAVoq1wY"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/1z6-QsVhu1j0Y135gfkwiaqDDvZ_OdidF?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="February 2021 – Present">
+                <h3>REVE Systems</h3>
+                <h4>Junior Software Engineer</h4>
+                <p>
+                    In this position I am working in E-Governence Department of the company in Bangladesh development
+                    office. Currently I am working as a Java Back-end Engineer on Parliament Resource Planning (PRP)
+                    project for Bangladesh National Parliament.
+                </p>
+            </div>
 
+            <div data-date="July 2021 – Present">
+                <h3>Youtube</h3>
+                <h4>Educational Content Creator</h4>
+                <p>
+                    This is a passion one of my big passion project. I have uploaded more than 70 video lectures of
+                    about 1 hour each in which has over 900 hours of watch
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK2tynv2daer1jLkHQd6ojlx"
-						class="image fit"><img src="images/m8.png" alt="" /></a>
-					<div class="inner">
-						<h3>ফাংশন ও ফাংশনের লেখচিত্র</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK2tynv2daer1jLkHQd6ojlx"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/1OQNL20ss7FxAX43A9lgaDy2xt_Iu1fxC?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Bangladesh University of Engineering and Technology</h3>
+            <span class="education-date">February 2016-February 2021</span>
+            <h4>Bachelor of Science in Computer Science and Engineering</h4>
+            <p>
+                This was a wonderful five years of my life. I consider myself very lucky: studied in the institution I
+                wanted to study; studied in the department I was passionate to study; shared the campus with a set of
+                brilliant minds.
+            </p>
+            <ul>
+                <li>
+                    Participated in variours intra and inter uneversity Competative Programming contest.
+                </li>
+                <li>
+                    Worked as a Academic Team Member of Bangladesh Mathematical Olympiad. As a part of this job I
+                    conducted about 30 regiuonal math olympiads and 4 national olympiads. In regiuonal olympiads the
+                    primary job was to check script, prepare results. Also conducted many problem set preparation camp
+                    as a Academic Member.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK3XfDfrr3Gq_UcoPXexi9AV"
-						class="image fit"><img src="images/m9.png" alt="" /></a>
-					<div class="inner">
-						<h3>অন্তরীকরণ</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK3XfDfrr3Gq_UcoPXexi9AV"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/1Y1GiVMNkN2VXbSN-FZvjjcaq-Bi1yQaF?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+        <div class="education-block">
+            <h3>BAF Shaheen College, Jashore</h3>
+            <span class="education-date">July 2013 - August 2015</span>
+            <h4>Higher Secondary School Certificate</h4>
+            <p>
+                Some of the most amazing years of my life was these two years.
+            </p>
+            <ul>
+                <li>
+                    For the first time I got a prize in the National Stage of Bangladesh Mathematical Olympiad and
+                    attended national math camp.
+                </li>
+                <li>
+                    I began to prepare juniors and my peers on math and programming olympiads.
+                </li>
+                <li>
+                    Reached to the highest level in National Creative Talent Hunt on "Math and Computer".
+                </li>
+                <li>
+                    Participated in various math and debating competetions.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK0LXRqVIHBqIJxu-fvJgZk5"
-						class="image fit"><img src="images/m1.png" alt="" /></a>
-					<div class="inner">
-						<h3>বাস্তব সংখ্যা ও অসমতা</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK0LXRqVIHBqIJxu-fvJgZk5"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/1R6dfEZcdmvQXNWyjDx0wY6XWMJx2BrZu?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+        <div class="education-block">
+            <h3>BAF Shaheen College, Jashore</h3>
+            <span class="education-date">January 2011 - April 2013</span>
+            <h4>Secondary School Certificate</h4>
+            <p>
+                My passion for many of the amazing things got started in this point of time. Almost all of which are
+                with me now.
+            </p>
+            <ul>
+                <li>
+                    First participated in Bangladesh Mathematical Olympiad in 2011 and became a Champion on Jashore
+                    regiuonal round.
+                </li>
+                <li>
+                    We formed Trivuj Math Club in 2012.
+                </li>
+                <li>
+                    Began particicating in various math competetions.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK1y818XtunW6aKvl2alwoMK"
-						class="image fit"><img src="images/p2.png" alt="" /></a>
-					<div class="inner">
-						<h3>ভেক্টর(পদার্থবিজ্ঞান)</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK1y818XtunW6aKvl2alwoMK"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/12lch6pZ48lumDGLJ0Y_DxU5WAQWasZMP?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/tic-tac-toe.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Tic-tac-toe</h3>
+                        <pre><strong>Python,PyGame,Minimax algorithm</strong></pre>
+                        <p>
+                            Build an AI to play Tic Tac Toe with Minimax algorithm in Python. Frontend game play is
+                            implemented in PyGame
+                        </p>
+                        <a href="https://github.com/MzMahmud/Tic-Tac-Toe" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
-				<div class="box">
-					<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK1GrRVZTyhaFamB9a8fZY3Y"
-						class="image fit"><img src="images/p3.png" alt="" /></a>
-					<div class="inner">
-						<h3>গতিবিদ্যা(পদার্থবিজ্ঞান)</h3>
-						<a href="https://www.youtube.com/playlist?list=PLqCKFWjpdLK1GrRVZTyhaFamB9a8fZY3Y"
-							class="button fit">Watch</a>
-						<a href="https://drive.google.com/drive/folders/1BHtFiKe5wb9OZYRTrXxCqvHCmMJf3Wlw?usp=sharing"
-							class="button fit">Lecture
-							Notes</a>
-					</div>
-				</div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/mancala.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Mancala Player</h3>
+                        <pre><strong>C++,OOP,Minimax algorithm,Alpha-Beta pruning</strong></pre>
+                        <p>
+                            Mancala is two-player turn-based strategy board game. In this project I build an AI to play
+                            Mancala with Minimax algorithm and Alpha-Beta pruning. I used OOP to organize game states.
+                        </p>
+                        <a target="_blank"
+                            href="https://github.com/MzMahmud/Artificial_Intelligence_Sessional_CSE_318/tree/master/4.%20Mancala">
+                            View Project
+                        </a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
-			</div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ray-tracer.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>2-D Ray-tracer and Graphics Programming</h3>
+                        <pre><strong>C++,OOP,OpenGL</strong></pre>
+                        <p>
+                            User OpenGL library to do graphics programming. In this project I built a 2-axis control
+                            whlee, a 2-d ray tracer and shader, fractal animatons,
+                        </p>
 
-		</div>
-	</div>
+                        <a target="_blank" href="https://github.com/MzMahmud/Computer_Graphics_Sessional_CSE_410">
+                            View Project
+                        </a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
 
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<p>যেহেতু ক্লাস গুলো সরাসরি নেয়া হয়েছে ছোটা খাটো ভুল হয়ে যেতে পারে। এমন কিছু ভুল পেলে বা কোন পরামর্শ থেকে থাকলে,
-				জানালে উন্নতি করার চেষ্টা করব।</p>
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Algorithm</li>
+            <li>Data Structure</li>
+            <li>Competative Programming</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Git</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>MySQL</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>LaTex</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
-			<ul class="icons">
-				<li><a href="https://www.youtube.com/MoazMahmud" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-				<li><a href="https://www.facebook.com/moaz.mahmud.64" class="icon fa-facebook"><span
-							class="label">Facebook</span></a></li>
-				<li><a href="https://www.instagram.com/mz_mahmud/" class="icon fa-instagram"><span
-							class="label">Instagram</span></a></li>
-				<li><a href="mailto:moaz.mahmud.64@gmail.com" class="icon fa-envelope"><span
-							class="label">Email</span></a></li>
-				<li><a href="https://www.linkedin.com/in/moaz-mahmud" class="icon fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-							
-			</ul>
-			<p class="copyright">&copy; Moaz Mahmud. Design: <a href="https://templated.co">TEMPLATED</a></p>
-		</div>
-	</footer>
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <!-- <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div> -->
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<!-- <script src="assets/js/util.js"></script> -->
-	<script src="assets/js/main.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 get-in-touch">
+                    <ul>
+                        <li>
+                            <a href="mailto:moaz.mahmud.64@gmail.com" target="_blank">
+                                <i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://github.com/MzMahmud" target="_blank">
+                                <i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/moaz-mahmud/" target="_blank">
+                                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/moaz.mahmud.64" target="_blank">
+                                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
 
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; Moaz Mahmud
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="mailto:moaz.mahmud.64@gmail.com" target="_blank"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://github.com/MzMahmud" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/moaz-mahmud/" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/moaz.mahmud.64" target="_blank"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
