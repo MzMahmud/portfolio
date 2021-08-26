@@ -697,7 +697,7 @@ footer {
     float: none;
   }
   .project-image {
-    display: none;
+    width: 100%;
   }
   .project-info {
     position: relative;
@@ -713,6 +713,17 @@ footer {
     text-align: center;
   }
 }
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.d-flex > * {
+  margin: 1.5rem;
+}
+
 @media only screen and (max-width: 480px) {
   #lead-content h1 {
     font-size: 1.5em;
@@ -723,5 +734,17 @@ footer {
   #lead-content a {
     font-size: 0.9em;
     padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .d-flex {
+    width: 75%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .d-flex > * {
+    margin: 1rem;
   }
 }
